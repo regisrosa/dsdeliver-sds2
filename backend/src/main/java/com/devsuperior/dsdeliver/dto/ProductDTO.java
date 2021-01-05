@@ -6,6 +6,8 @@ import com.devsuperior.dsdeliver.entities.Product;
 
 public class ProductDTO implements Serializable{
 	
+	private static final long serialVersionUID = 1L;
+
 	private Long id;
 	private String name;
 	private Double price;
@@ -72,5 +74,4 @@ public class ProductDTO implements Serializable{
 	}
 	
 	
-
 }
