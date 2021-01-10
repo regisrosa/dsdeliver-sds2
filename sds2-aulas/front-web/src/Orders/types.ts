@@ -1,3 +1,5 @@
+import { type } from "os"
+
 export type Product = {
     id: number;
     name: string;
@@ -11,3 +13,13 @@ export type OrderLocationData = {
     longitude: number;
     address: string;
 }
+
+type ProductId = {
+    id: number;
+}
+
+export type OrderPayLoad = {
+    products: ProductId[];
+} & OrderLocationData;
+
+const payload: OrderPayLoad = undefined;
